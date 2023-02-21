@@ -1,0 +1,9 @@
+C:\Users\חני\Documents\Project Music\Server\FullLayers\Common\bin\Debug\netcoreapp3.1\Common.deps.json
+C:\Users\חני\Documents\Project Music\Server\FullLayers\Common\bin\Debug\netcoreapp3.1\Common.dll
+C:\Users\חני\Documents\Project Music\Server\FullLayers\Common\bin\Debug\netcoreapp3.1\Common.pdb
+C:\Users\חני\Documents\Project Music\Server\FullLayers\Common\obj\Debug\netcoreapp3.1\Common.csprojAssemblyReference.cache
+C:\Users\חני\Documents\Project Music\Server\FullLayers\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfoInputs.cache
+C:\Users\חני\Documents\Project Music\Server\FullLayers\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfo.cs
+C:\Users\חני\Documents\Project Music\Server\FullLayers\Common\obj\Debug\netcoreapp3.1\Common.csproj.CoreCompileInputs.cache
+C:\Users\חני\Documents\Project Music\Server\FullLayers\Common\obj\Debug\netcoreapp3.1\Common.dll
+C:\Users\חני\Documents\Project Music\Server\FullLayers\Common\obj\Debug\netcoreapp3.1\Common.pdb

@@ -1,0 +1,12 @@
+C:\Users\חני\Documents\Project Music\Server\FullLayers\Repositories\bin\Debug\netcoreapp3.1\Repositories.deps.json
+C:\Users\חני\Documents\Project Music\Server\FullLayers\Repositories\bin\Debug\netcoreapp3.1\Repositories.dll
+C:\Users\חני\Documents\Project Music\Server\FullLayers\Repositories\obj\Debug\netcoreapp3.1\Repositories.csprojAssemblyReference.cache
+C:\Users\חני\Documents\Project Music\Server\FullLayers\Repositories\obj\Debug\netcoreapp3.1\Repositories.AssemblyInfoInputs.cache
+C:\Users\חני\Documents\Project Music\Server\FullLayers\Repositories\obj\Debug\netcoreapp3.1\Repositories.AssemblyInfo.cs
+C:\Users\חני\Documents\Project Music\Server\FullLayers\Repositories\bin\Debug\netcoreapp3.1\Repositories.runtimeconfig.json
+C:\Users\חני\Documents\Project Music\Server\FullLayers\Repositories\bin\Debug\netcoreapp3.1\Repositories.runtimeconfig.dev.json
+C:\Users\חני\Documents\Project Music\Server\FullLayers\Repositories\obj\Debug\netcoreapp3.1\Repositories.genruntimeconfig.cache
+C:\Users\חני\Documents\Project Music\Server\FullLayers\Repositories\bin\Debug\netcoreapp3.1\Repositories.pdb
+C:\Users\חני\Documents\Project Music\Server\FullLayers\Repositories\obj\Debug\netcoreapp3.1\Repositories.csproj.CoreCompileInputs.cache
+C:\Users\חני\Documents\Project Music\Server\FullLayers\Repositories\obj\Debug\netcoreapp3.1\Repositories.dll
+C:\Users\חני\Documents\Project Music\Server\FullLayers\Repositories\obj\Debug\netcoreapp3.1\Repositories.pdb

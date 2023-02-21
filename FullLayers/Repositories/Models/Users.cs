@@ -1,0 +1,36 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace Repositories.Models
+{
+    public partial class Users
+    {
+        public Users()
+        {
+            AlbumToSinger = new HashSet<AlbumToSinger>();
+            Connection = new HashSet<Connection>();
+            FavoriteSongs = new HashSet<FavoriteSongs>();
+            FollowListeningSongs = new HashSet<FollowListeningSongs>();
+            FollowViewingPosts = new HashSet<FollowViewingPosts>();
+            FollowersSinger = new HashSet<Followers>();
+            FollowersUser = new HashSet<Followers>();
+            JobToUser = new HashSet<JobToUser>();
+        }
+
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
+        public bool Newsletter { get; set; }
+        public string Image { get; set; }
+
+        public virtual ICollection<AlbumToSinger> AlbumToSinger { get; set; }
+        public virtual ICollection<Connection> Connection { get; set; }
+        public virtual ICollection<FavoriteSongs> FavoriteSongs { get; set; }
+        public virtual ICollection<FollowListeningSongs> FollowListeningSongs { get; set; }
+        public virtual ICollection<FollowViewingPosts> FollowViewingPosts { get; set; }
+        public virtual ICollection<Followers> FollowersSinger { get; set; }
+        public virtual ICollection<Followers> FollowersUser { get; set; }
+        public virtual ICollection<JobToUser> JobToUser { get; set; }
+    }
+}
