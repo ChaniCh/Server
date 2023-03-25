@@ -11,7 +11,12 @@ namespace AppServices.Profiles
     {
         public AlbumsProfile()
         {
-            CreateMap<Albums, AlbumsViewModel>();
+            CreateMap<Albums, AlbumsViewModel>()
+                .ForMember(i => i.Id, ops => ops.MapFrom(i => i.Id))
+                .ForMember(n => n.Name, ops => ops.MapFrom(n => n.Name))
+                .ForMember(p => p.PublicationDate, ops => ops.MapFrom(p => p.PublicationDate))
+                .ForMember(s => s.Status, ops => ops.MapFrom(s => s.Status))
+                .ReverseMap();
         }
     }
 }

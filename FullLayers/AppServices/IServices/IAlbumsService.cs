@@ -18,5 +18,7 @@ namespace AppServices.IServices
         public List<SongsViewModel> GetSongs(int albumId);
 
         public void SetStatus(int albumId, bool status);
+
+        public List<AlbumsViewModel> GetAlbumsBySingerId(int singerId);
     }
 }

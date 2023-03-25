@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\חני\\Documents\\Project Music\\Server\\FullLayers\\Common\\Common.csproj",
+      "projectUniqueName": "C:\\Users\\חני\\Desktop\\Server\\FullLayers\\Common\\Common.csproj",
       "projectName": "Common",
-      "projectPath": "C:\\Users\\חני\\Documents\\Project Music\\Server\\FullLayers\\Common\\Common.csproj",
+      "projectPath": "C:\\Users\\חני\\Desktop\\Server\\FullLayers\\Common\\Common.csproj",
       "packagesPath": "C:\\Users\\חני\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\חני\\Documents\\Project Music\\Server\\FullLayers\\Common\\obj\\",
+      "outputPath": "C:\\Users\\חני\\Desktop\\Server\\FullLayers\\Common\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\חני\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -5781,11 +5781,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\חני\\Documents\\Project Music\\Server\\FullLayers\\AppServices\\AppServices.csproj",
+      "projectUniqueName": "C:\\Users\\חני\\Desktop\\Server\\FullLayers\\AppServices\\AppServices.csproj",
       "projectName": "AppServices",
-      "projectPath": "C:\\Users\\חני\\Documents\\Project Music\\Server\\FullLayers\\AppServices\\AppServices.csproj",
+      "projectPath": "C:\\Users\\חני\\Desktop\\Server\\FullLayers\\AppServices\\AppServices.csproj",
       "packagesPath": "C:\\Users\\חני\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\חני\\Documents\\Project Music\\Server\\FullLayers\\AppServices\\obj\\",
+      "outputPath": "C:\\Users\\חני\\Desktop\\Server\\FullLayers\\AppServices\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\חני\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5801,11 +5801,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\חני\\Documents\\Project Music\\Server\\FullLayers\\Common\\Common.csproj": {
-              "projectPath": "C:\\Users\\חני\\Documents\\Project Music\\Server\\FullLayers\\Common\\Common.csproj"
+            "C:\\Users\\חני\\Desktop\\Server\\FullLayers\\Common\\Common.csproj": {
+              "projectPath": "C:\\Users\\חני\\Desktop\\Server\\FullLayers\\Common\\Common.csproj"
             },
-            "C:\\Users\\חני\\Documents\\Project Music\\Server\\FullLayers\\Repositories\\Repositories.csproj": {
-              "projectPath": "C:\\Users\\חני\\Documents\\Project Music\\Server\\FullLayers\\Repositories\\Repositories.csproj"
+            "C:\\Users\\חני\\Desktop\\Server\\FullLayers\\Repositories\\Repositories.csproj": {
+              "projectPath": "C:\\Users\\חני\\Desktop\\Server\\FullLayers\\Repositories\\Repositories.csproj"
             }
           }
         }

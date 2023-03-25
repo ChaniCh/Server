@@ -16,7 +16,7 @@ namespace Common.ViewModels
         public string Title { get; set; }
         public string Subtitle { get; set; }
         public string Content { get; set; }
-        public DateTime LastListeningDate { get; set; }
+        //public DateTime LastListeningDate { get; set; }
         public bool Status { get; set; }
 
         public List<CommentsToSongViewModel> commentsToSong { get; set; }

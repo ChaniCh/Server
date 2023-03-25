@@ -5727,11 +5727,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\חני\\Documents\\Project Music\\Server\\FullLayers\\Repositories\\Repositories.csproj",
+      "projectUniqueName": "C:\\Users\\חני\\Desktop\\Server\\FullLayers\\Repositories\\Repositories.csproj",
       "projectName": "Repositories",
-      "projectPath": "C:\\Users\\חני\\Documents\\Project Music\\Server\\FullLayers\\Repositories\\Repositories.csproj",
+      "projectPath": "C:\\Users\\חני\\Desktop\\Server\\FullLayers\\Repositories\\Repositories.csproj",
       "packagesPath": "C:\\Users\\חני\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\חני\\Documents\\Project Music\\Server\\FullLayers\\Repositories\\obj\\",
+      "outputPath": "C:\\Users\\חני\\Desktop\\Server\\FullLayers\\Repositories\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\חני\\AppData\\Roaming\\NuGet\\NuGet.Config",

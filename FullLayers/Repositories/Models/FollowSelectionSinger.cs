@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Repositories.Models
 {
@@ -11,6 +10,7 @@ namespace Repositories.Models
         public int SingerId { get; set; }
         public DateTime Date { get; set; }
 
+        public virtual Users Singer { get; set; }
         public virtual Users User { get; set; }
     }
 }

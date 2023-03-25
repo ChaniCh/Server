@@ -8,6 +8,9 @@ namespace Repositories.Interfaces
     public interface IAlbumsRepository : IRepository<Albums>
     {
         public List<Songs> GetSongs(int albumId);
+
         public void SetStatus(int albumId, bool status);
+
+        public List<Albums> GetAlbumsBySingerId(int singerId);
     }
 }

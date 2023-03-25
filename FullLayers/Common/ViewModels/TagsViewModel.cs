@@ -8,6 +8,7 @@ namespace Common.ViewModels
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public bool? Status { get; set; }
 
         public List<TagForPostViewModel> tagForPost { get; set; }
         public List<TagForSongViewModel> tagForSong { get; set; }

@@ -60,5 +60,11 @@ namespace AppServices.Services
         {
             repository.SetStatus(albumId, status);
         }
+
+        public List<AlbumsViewModel> GetAlbumsBySingerId(int singerId)
+        {
+            List<Albums> albums = repository.GetAlbumsBySingerId(singerId);
+            return mapper.Map<List<AlbumsViewModel>>(albums);
+        }
     }
 }

@@ -13,6 +13,7 @@ namespace Repositories.Models
 
         public int Id { get; set; }
         public string Name { get; set; }
+        public bool? Status { get; set; }
 
         public virtual ICollection<TagForPost> TagForPost { get; set; }
         public virtual ICollection<TagForSong> TagForSong { get; set; }

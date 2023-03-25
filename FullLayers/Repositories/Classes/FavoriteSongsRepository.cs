@@ -19,6 +19,7 @@ namespace Repositories.Classes
 
         public void Create(FavoriteSongs obj)
         {
+            obj.Date = DateTime.Now;
             context.FavoriteSongs.Add(obj);
             context.SaveChanges();
         }

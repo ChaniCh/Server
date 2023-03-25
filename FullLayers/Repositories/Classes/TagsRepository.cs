@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Repositories.Classes
 {
@@ -47,6 +48,11 @@ namespace Repositories.Classes
             context.Entry(obj).State = EntityState.Deleted;
             context.Update(obj);
             context.SaveChanges();
+        }
+
+        public async Task<bool> CheckTagExistsAsync(string tag)
+        {
+            return await context.Tags.AnyAsync(t => t.Name == tag);
         }
     }
 }

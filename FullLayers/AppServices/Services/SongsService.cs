@@ -6,6 +6,7 @@ using Repositories.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace AppServices.Services
 {
@@ -22,12 +23,19 @@ namespace AppServices.Services
 
         public void AddSong(SongsViewModel song)
         {
+            song.Date = DateTime.Now;
             repository.Create(mapper.Map<Songs>(song));
         }
 
         public void DeleteSong(int id)
         {
             repository.Delete(id);
+        }
+
+        public SongsViewModel GetById(int id)
+        {
+            Songs songs = repository.GetById(id);
+            return mapper.Map<SongsViewModel>(songs);
         }
 
         public List<SongsViewModel> GetList()
@@ -37,6 +45,19 @@ namespace AppServices.Services
             {
                 songsViewModel.Add(mapper.Map<SongsViewModel>(song));
             }
+            return songsViewModel;
+        }
+
+        public string GetSongUrl(int songId)
+        {
+            var url = repository.GetSongUrl(songId);
+            return url;
+        }
+
+        public async Task<List<SongsViewModel>> GetSongsByTagAsync(int tagId)
+        {
+            var songs = await repository.GetSongsByTagAsync(tagId);
+            var songsViewModel = mapper.Map<List<SongsViewModel>>(songs);
             return songsViewModel;
         }
     }

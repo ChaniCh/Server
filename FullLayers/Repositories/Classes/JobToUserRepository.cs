@@ -8,11 +8,11 @@ using System.Text;
 
 namespace Repositories.Classes
 {
-    public class JobToUserRpository : IJobToUserRepository
+    public class JobToUserRepository : IJobToUserRepository
     {
         LibraryContext context;
 
-        public JobToUserRpository(LibraryContext context)
+        public JobToUserRepository(LibraryContext context)
         {
             this.context = context;
         }

@@ -6,6 +6,7 @@ using Repositories.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace AppServices.Services
 {
@@ -30,6 +31,12 @@ namespace AppServices.Services
             repository.Delete(id);
         }
 
+        public TagsViewModel GetById(int id)
+        {
+            Tags tags = repository.GetById(id);
+            return mapper.Map<TagsViewModel>(tags);
+        }
+
         public List<TagsViewModel> GetList()
         {
             List<TagsViewModel> tagsViewModels = new List<TagsViewModel>();
@@ -38,6 +45,11 @@ namespace AppServices.Services
                 tagsViewModels.Add(mapper.Map<TagsViewModel>(tag));
             }
             return tagsViewModels;
+        }
+
+        public async Task<bool> CheckTagExistsAsync(string tag)
+        {
+            return await repository.CheckTagExistsAsync(tag);
         }
     }
 }

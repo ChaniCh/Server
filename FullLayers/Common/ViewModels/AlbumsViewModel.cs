@@ -8,6 +8,7 @@ namespace Common.ViewModels
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public DateTime PublicationDate { get; set; }
         public bool Status { get; set; }
 
         public List<AlbumToSingerViewModel> albumToSinger { get; set; }

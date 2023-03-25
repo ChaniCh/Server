@@ -7,6 +7,6 @@ namespace Repositories.Interfaces
 {
     public interface IFollowListeningSongsRepository : IRepository<FollowListeningSongs>
     {
-
+        public List<Songs> GetTopTenMostPlayedSongsLastWeek();
     }
 }

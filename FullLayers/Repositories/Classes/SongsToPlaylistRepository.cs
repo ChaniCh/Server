@@ -48,5 +48,16 @@ namespace Repositories.Classes
             context.Update(obj);
             context.SaveChanges();
         }
+
+        public List<Songs> GetPlaylistSongs(int playlistId)
+        {
+            var songs = context.SongsToPlaylist
+                .Where(p => p.PlaylistId == playlistId)
+                .Select(s => s.Song)
+                .ToList();
+
+            return songs;
+        }
+
     }
 }

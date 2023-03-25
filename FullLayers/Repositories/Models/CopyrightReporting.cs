@@ -11,7 +11,7 @@ namespace Repositories.Models
         public string Phone { get; set; }
         public int SongId { get; set; }
         public string Message { get; set; }
-        public bool Status { get; set; }
+        public int? Status { get; set; }
 
         public virtual Songs Song { get; set; }
     }

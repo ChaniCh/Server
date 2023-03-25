@@ -41,5 +41,23 @@ namespace Repositories.Classes
         {
             context.Connection.Update(obj);
         }
+
+        public int GetUserId(string email, string password)
+        {
+            int userId = 0;
+            var user = context.Users.SingleOrDefault(u => u.Email == email && u.Password == password);
+            if (user != null)
+            {
+                userId = user.Id;
+            }
+            return userId;
+        }
+        
+        public void InsertUserId(int userId)
+        {
+            var id = new Connection { UserId = userId, Date = DateTime.Now };
+            context.Connection.Add(id);
+            context.SaveChanges();
+        }
     }
 }

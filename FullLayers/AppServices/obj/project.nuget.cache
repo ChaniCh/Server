@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Yo7jELr6qYcPPwY3Yip687/PPNgyYgAmrcSHfe8Uoa1M8q73B+pahoW0zmR1ssADT/6349tKG3tP7HGTzJo8Hw==",
+  "dgSpecHash": "RDsLhtS2uVavl1opoClchVYc07eD8gMb0BSnGtshHBQQImDXLLVjedKSxK15ovM0cIWv8RuKOlrRMo2CRHrl2g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\חני\\Documents\\Project Music\\Server\\FullLayers\\AppServices\\AppServices.csproj",
+  "projectFilePath": "C:\\Users\\חני\\Desktop\\Server\\FullLayers\\AppServices\\AppServices.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\חני\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\חני\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

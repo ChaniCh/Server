@@ -7,6 +7,10 @@ namespace Repositories.Interfaces
 {
     public interface IConnectionRepository : IRepository<Connection>
     {
+        public int GetUserId(string email, string password);
+
+        public void InsertUserId(int userId);
 
     }
 }
+

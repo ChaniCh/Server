@@ -20,6 +20,7 @@ namespace Repositories.Classes
         public void Create(Albums obj)
         {
             context.Albums.Add(obj);
+            context.SaveChanges();
         }
 
         public void Delete(int id)
@@ -58,6 +59,14 @@ namespace Repositories.Classes
             Albums a = GetById(albumId);
             a.Status = status;
             context.SaveChanges();
+        }
+
+        public List<Albums> GetAlbumsBySingerId(int singerId)
+        {
+            return context.AlbumToSinger
+                .Where(albunToSinger => albunToSinger.SingerId == singerId)
+                .Select(albumToSinger => albumToSinger.Album)
+                .ToList();
         }
     }
 }

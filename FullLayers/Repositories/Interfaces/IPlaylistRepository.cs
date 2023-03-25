@@ -7,6 +7,10 @@ namespace Repositories.Interfaces
 {
     public interface IPlaylistRepository : IRepository<Playlist>
     {
+        public List<Songs> GetPlaylistSongs(int playlistId);
 
+        //public List<Songs> GetPlaylistSongs(int playlistId);
+
+        //public List<SongsToPlaylist> GetPlaylistSongs(int playlistId);
     }
 }

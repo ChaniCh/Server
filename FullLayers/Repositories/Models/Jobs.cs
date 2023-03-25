@@ -12,6 +12,7 @@ namespace Repositories.Models
 
         public int Id { get; set; }
         public string Name { get; set; }
+        public bool? Status { get; set; }
 
         public virtual ICollection<JobToUser> JobToUser { get; set; }
     }

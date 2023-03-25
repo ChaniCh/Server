@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Common.ViewModels;
+using Repositories.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,7 +11,13 @@ namespace AppServices.Profiles
     {
         public UsersProfile()
         {
-
+            CreateMap<Users, UsersViewModel>()
+                .ForMember(i => i.Id, ops => ops.MapFrom(i => i.Id))
+                .ForMember(n => n.Name, ops => ops.MapFrom(n => n.Name))
+                .ForMember(e => e.Email, ops => ops.MapFrom(e => e.Email))
+                .ForMember(p => p.Password, ops => ops.MapFrom(p => p.Password))
+                .ForMember(s => s.Image, ops => ops.MapFrom(s => s.Image))
+                .ReverseMap();
         }
     }
 }
