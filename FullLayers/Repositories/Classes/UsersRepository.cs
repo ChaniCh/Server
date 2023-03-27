@@ -43,10 +43,23 @@ namespace Repositories.Classes
             return context.Users.Find(id);
         }
 
-        public void Update(Users obj)
+        //public void Update(Users obj)
+        //{
+        //    context.Entry(obj).State = EntityState.Deleted;
+        //    context.Update(obj);
+        //    context.SaveChanges();
+        //}
+
+        public void Update(Users user)
         {
-            context.Entry(obj).State = EntityState.Deleted;
-            context.Update(obj);
+            var existingUser = context.Users.FirstOrDefault(u => u.Id == user.Id);
+            if(existingUser != null)
+            {
+                existingUser.Name = user.Name;
+                existingUser.Email = user.Email;
+                existingUser.Password = user.Password;
+                existingUser.Status = user.Status;
+            }
             context.SaveChanges();
         }
 
@@ -91,6 +104,14 @@ namespace Repositories.Classes
             return await context.Users
                 .Where(u => u.JobToUser.Any(ju => ju.JobId == jobId))
                 .ToListAsync();
+        }
+
+        public string GenerateRandomPassword(int length)
+        {
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            var random = new Random();
+            return new string(Enumerable.Repeat(chars, length)
+                  .Select(s => s[random.Next(s.Length)]).ToArray());
         }
 
         //public Users GetByPassword(string name, string email, string password)

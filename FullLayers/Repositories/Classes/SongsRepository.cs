@@ -54,7 +54,7 @@ namespace Repositories.Classes
             public string GetSongUrl(int songId)
             {
                 var song = context.Songs.Find(songId);
-                return song.FileLocation;
+                return song.Song;
             }
 
         public async Task<List<Songs>> GetSongsByTagAsync(int tagId)

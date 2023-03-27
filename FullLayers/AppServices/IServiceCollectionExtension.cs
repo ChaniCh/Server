@@ -28,6 +28,7 @@ namespace AppServices
             service.AddScoped<IJobToUserService, JobToUserService>();
             service.AddScoped<IPlaylistService, PlaylistService>();
             service.AddScoped<IPostsService, PostsService>();
+            service.AddScoped<IRequestsService, RequestsService>();
             service.AddScoped<ISongsService, SongsService>();
             service.AddScoped<ISongsToPlaylistService, SongsToPlaylistService>();
             service.AddScoped<ISongToSingerService, SongToSingerService>();
@@ -36,11 +37,15 @@ namespace AppServices
             service.AddScoped<ITagsService, TagsService>();
             service.AddScoped<IUsersService, UsersService>();
             service.AddAutoMapper(typeof(AlbumsProfile));
+            service.AddAutoMapper(typeof(AlbumToSingerProfile));
             service.AddAutoMapper(typeof(ConnectionProfile));
             service.AddAutoMapper(typeof(FavoriteSongsProfile));
             service.AddAutoMapper(typeof(FollowListeningSongsProfile));
             service.AddAutoMapper(typeof(JobsProfile));
+            service.AddAutoMapper(typeof(JobToUserProfile));
             service.AddAutoMapper(typeof(PlaylistProfile));
+            service.AddAutoMapper(typeof(RequestsProfile));
+            service.AddAutoMapper(typeof(SongsProfile));
             service.AddAutoMapper(typeof(SongsToPlaylistProfile));
             service.AddAutoMapper(typeof(SongToSingerProfile));
             service.AddAutoMapper(typeof(TagsProfile));

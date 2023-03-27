@@ -39,7 +39,7 @@ namespace AppServices.Services
         public List<JobToUserViewModel> GetList()
         {
             List<JobToUserViewModel> jobToUserViewModel = new List<JobToUserViewModel>();
-            foreach (var jobToUser in GetList())
+            foreach (var jobToUser in repository.GetAll())
             {
                 jobToUserViewModel.Add(mapper.Map<JobToUserViewModel>(jobToUser));
             }

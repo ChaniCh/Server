@@ -511,12 +511,11 @@ namespace Repositories.Models
                     .HasColumnName("date")
                     .HasColumnType("datetime");
 
-                entity.Property(e => e.FileLocation)
-                    .HasColumnName("fileLocation")
+                entity.Property(e => e.Image)
+                    .HasColumnName("image")
                     .IsUnicode(false);
 
                 entity.Property(e => e.Name)
-                    .IsRequired()
                     .HasColumnName("name")
                     .HasMaxLength(50)
                     .IsUnicode(false);
@@ -526,6 +525,10 @@ namespace Repositories.Models
                 entity.Property(e => e.PublicationDate)
                     .HasColumnName("publicationDate")
                     .HasColumnType("datetime");
+
+                entity.Property(e => e.Song)
+                    .HasColumnName("song")
+                    .IsUnicode(false);
 
                 entity.Property(e => e.Status).HasColumnName("status");
 

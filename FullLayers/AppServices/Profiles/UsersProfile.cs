@@ -16,7 +16,8 @@ namespace AppServices.Profiles
                 .ForMember(n => n.Name, ops => ops.MapFrom(n => n.Name))
                 .ForMember(e => e.Email, ops => ops.MapFrom(e => e.Email))
                 .ForMember(p => p.Password, ops => ops.MapFrom(p => p.Password))
-                .ForMember(s => s.Image, ops => ops.MapFrom(s => s.Image))
+                .ForMember(i => i.Image, ops => ops.MapFrom(i => i.Image))
+                .ForMember(s => s.Status, ops => ops.MapFrom(s => s.Status))
                 .ReverseMap();
         }
     }

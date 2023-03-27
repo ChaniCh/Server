@@ -19,6 +19,8 @@ namespace Repositories.Interfaces
         public Task<Jobs> GetJobByNameAsync(string name);
 
         public Task<List<Users>> GetUsersByJobIdAsync(int jobId);
+        
+        public string GenerateRandomPassword(int length);
 
         //public Users GetByPassword(string name, string email, string password);
     }

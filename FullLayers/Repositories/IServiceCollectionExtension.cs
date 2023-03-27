@@ -28,6 +28,7 @@ namespace Repositories
             service.AddScoped<IJobToUserRepository, JobToUserRepository>();
             service.AddScoped<IPlaylistRepository, PlaylistRepository>();
             service.AddScoped<IPostsRepository, PostsRepository>();
+            service.AddScoped<IRequestsRepository, RequestsRepository>();
             service.AddScoped<ISongsRepository, SongsRepository>();
             service.AddScoped<ISongsToPlaylistRepository, SongsToPlaylistRepository>();
             service.AddScoped<ISongToSingerRepository, SongToSingerRepository>();

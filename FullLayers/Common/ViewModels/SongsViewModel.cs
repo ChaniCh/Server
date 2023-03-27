@@ -13,11 +13,14 @@ namespace Common.ViewModels
         public long? CountLike { get; set; }
         public long? CountListening { get; set; }
         public int? AlbumId { get; set; }
+        public int? NumberInAlbum { get; set; }
         public string Title { get; set; }
         public string Subtitle { get; set; }
         public string Content { get; set; }
         //public DateTime LastListeningDate { get; set; }
         public bool Status { get; set; }
+        public string Song { get; set; }
+        public string Image { get; set; }
 
         public List<CommentsToSongViewModel> commentsToSong { get; set; }
         public List<CopyrightReportingViewModel> copyrightReporting { get; set; }

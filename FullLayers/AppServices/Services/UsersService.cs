@@ -23,6 +23,11 @@ namespace AppServices.Services
 
         public void AddUser(UsersViewModel user)
         {
+            if (string.IsNullOrEmpty(user.Password))
+            {
+                user.Password = repository.GenerateRandomPassword(8);
+            }
+            
             repository.Create(mapper.Map<Users>(user));
         }
 
@@ -36,6 +41,24 @@ namespace AppServices.Services
             Users users = repository.GetById(id);
             return mapper.Map<UsersViewModel>(users);
         }
+
+        //public void Update(UsersViewModel userViewModel)
+        //{
+        //    UsersViewModel existingUser = repository.GetById(userViewModel.Id);
+
+        //    if (existingUser != null)
+        //    {
+        //        existingUser.Name = userViewModel.Name;
+        //        existingUser.Email = userViewModel.Email;
+        //        existingUser.Password = userViewModel.Password;
+        //        //existingUser.Status=userViewModel.
+
+        //        repository.Update(mapper.Map<Users>(existingUser));
+
+        //        // Save changes to the database
+        //        //repository.Update(updatedUserViewModel);
+        //    }
+        //}
 
         public UsersViewModel GetByPassword(string email, string password)
         {
@@ -79,5 +102,6 @@ namespace AppServices.Services
             var artistUsers = await repository.GetUsersByJobIdAsync(artistJob.Id);
             return mapper.Map<List<UsersViewModel>>(artistUsers);
         }
+
     }
 }

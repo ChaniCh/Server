@@ -39,7 +39,7 @@ namespace AppServices.Services
         public List<AlbumToSingerViewModel> GetList()
         {
             List<AlbumToSingerViewModel> albumToSingerViewModels = new List<AlbumToSingerViewModel>();
-            foreach(var albumToSinger in GetList())
+            foreach(var albumToSinger in repository.GetAll())
             {
                 albumToSingerViewModels.Add(mapper.Map<AlbumToSingerViewModel>(albumToSinger));
             }

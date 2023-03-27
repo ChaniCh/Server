@@ -28,7 +28,8 @@ namespace Repositories.Models
         public string Subtitle { get; set; }
         public string Content { get; set; }
         public bool Status { get; set; }
-        public string FileLocation { get; set; }
+        public string Song { get; set; }
+        public string Image { get; set; }
 
         public virtual Albums Album { get; set; }
         public virtual ICollection<CommentsToSong> CommentsToSong { get; set; }

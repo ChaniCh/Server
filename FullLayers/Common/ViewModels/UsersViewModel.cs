@@ -12,6 +12,7 @@ namespace Common.ViewModels
         public string Password { get; set; }
         public bool Newsletter { get; set; }
         public string Image { get; set; }
+        public bool? Status { get; set; }
 
         public List<AlbumToSingerViewModel> albumToSinger { get; set; }
         public List<ConnectionViewModel> connection { get; set; }

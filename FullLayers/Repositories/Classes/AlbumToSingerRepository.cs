@@ -19,6 +19,7 @@ namespace Repositories.Classes
         public void Create(AlbumToSinger obj)
         {
             context.AlbumToSinger.Add(obj);
+            context.SaveChanges();
         }
 
         public void Delete(int id)
